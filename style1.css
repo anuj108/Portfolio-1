@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@400;800&family=Roboto+Mono:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#sec {
+  background: url(/project_portfolio/elti-meshau-2S2F2exmbhw-unsplash.jpg)
+    no-repeat center center/cover;
+  position: relative;
+  background-attachment: fixed;
+}
+#sec::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  background-color: black;
+  opacity: 0.5;
+}
+.inner a {
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  transition: all 1s;
+  width: fit-content;
+  border: 2px solid white;
+  padding: 40px 80px;
+  margin: 20px;
+  font-family: sans-serif;
+}
+.inner a:nth-child(2) {
+  padding: 20px 20px;
+  margin: auto;
+  transition: all 1s;
+}
+.cd {
+  position: relative;
+  transition: all 1s;
+  z-index: 1;
+  color: white;
+  background-color: red;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.cd::before {
+  content: "";
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  transition: all 0.8s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+.cd:hover::before {
+  transition: all 0.8s;
+  color: red;
+  background-color: black;
+  transform: translateX(0);
+}
+.cd:hover {
+  transform: scale(1.2);
+}
+.ab {
+  color: red;
+  position: relative;
+  transition: all 1s;
+  z-index: 0;
+}
+.ab::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s;
+  background-color: red;
+  transform: rotateX(90deg);
+  z-index: -1;
+}
+.ab:after {
+  content: "WELCOME";
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s;
+  color: white;
+  font-size: 30px;
+  background-color: black;
+  transform: rotateY(90deg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ab:hover:after {
+  transform: rotateX(0deg);
+}
+.ab:hover:before {
+  transform: rotateX(0deg);
+}
+.ab:hover {
+  color: rgb(196, 176, 176);
+  transform: scale(1.2);
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+.brand-title a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+.brand-title a:hover {
+  background-color: white;
+  transition: all 1s;
+  color: black;
+  padding: 1rem;
+}
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+@media (max-width: 582px) {
+  .inner a {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+}
+/* navbar and front ended */
+/* about me */
+#about {
+  display: flex;
+  position: relative;
+}
+.img-about {
+  background: url(/project_portfolio/img.jpeg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  border-radius: 100px;
+}
+.sec {
+}
+.sec h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 43px;
+}
+.sec p {
+  text-align: center;
+  display: flex;
+
+  font-family: "Viaoda Libre", cursive;
+  /* flex-direction: column; */
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+}
+.sec a {
+  text-decoration: none;
+  padding: 20px 40px;
+  font-family: "Poppins", sans-serif;
+  color: tomato;
+  font-size: 20px;
+  transform: scale(1);
+  transition: all 1s;
+}
+.sec a:hover {
+  background-color: white;
+  color: black;
+  transition: all 1s linear;
+  transform: scale(1.05);
+}
+#a1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+#about::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(/project_portfolio/pexels-lorenzo-242236.jpg) no-repeat center
+    center/cover;
+  position: absolute;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 0.6;
+}
+/* eductation */
+#edu {
+  position: relative;
+  display: flex;
+}
+.img-edu {
+  background: url(/project_portfolio/IMG_20210619_171129_082.jpg) no-repeat
+    center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  border-radius: 100px;
+}
+.edu {
+}
+.ed h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 58px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: red;
+}
+.ed p {
+  text-align: center;
+  display: flex;
+
+  font-family: "Source Code Pro", monospace;
+  /* flex-direction: column; */
+  font-size: 25px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.ed a {
+  text-decoration: none;
+  padding: 20px 40px;
+  font-family: "Poppins", sans-serif;
+  color: tomato;
+  font-size: 20px;
+  transform: scale(1);
+  transition: all 1s;
+}
+.ed a:hover {
+  background-color: white;
+  color: black;
+  transition: all 1s linear;
+  transform: scale(1.05);
+}
+#a2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+#edu::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(/project_portfolio/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg)
+    no-repeat center center/cover;
+  background-attachment: fixed;
+  opacity: 1;
+  z-index: -1;
+}
+.h {
+  height: 30px;
+}
+/* box */
+.box1 {
+  background: url(/project_portfolio/elti-meshau-2S2F2exmbhw-unsplash.jpg)
+    no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 50vh;
+  width: 100%;
+}
+/* box 2 */
+.box2 {
+  background: url(/project_portfolio/elti-meshau-2S2F2exmbhw-unsplash.jpg)
+    no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 50vh;
+  width: 100%;
+}
+/* footer */
+.f {
+  height: 50px;
+}
+.footer-container {
+  background-color: black;
+  height: 50vh;
+  width: 100%;
+}
+.footer-container h2 {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+  color: white;
+}
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 50px;
+}
+.social-links a {
+  padding: 23px;
+  color: grey;
+}
+.social-links a:hover {
+  background-color: wheat;
+  color: black;
+}
+/* responsive part 2 */
+@media (max-width: 840px) {
+  #about {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .img-about {
+    height: 50%;
+    width: 50%;
+  }
+  #edu {
+    flex-direction: column-reverse;
+  }
+}
+/* here is the 3rd section */
+#skills {
+  position: relative;
+  display: flex;
+}
+.img-skills {
+  background: url(/project_portfolio/photoart.collagemaker.picgrid.edit.photoframe_202161721650115.png)
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  border-radius: 100px;
+}
+.skill h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 43px;
+}
+#skills::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(/project_portfolio/joshua-fuller-Ff8vULr_R7I-unsplash.jpg)
+    no-repeat center center/cover;
+  background-color: tomato;
+  background-attachment: fixed;
+  opacity: 0.6;
+  z-index: -1;
+}
+.h {
+  height: 30px;
+}
+.skill p {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  font-family: "Viaoda Libre", cursive;
+  /* flex-direction: column; */
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.skill {
+  width: 192%;
+}
+.img-skills {
+}
