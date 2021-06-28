@@ -12,7 +12,7 @@
   height: 100vh;
 }
 #sec {
-  background: url(/project_portfolio/elti-meshau-2S2F2exmbhw-unsplash.jpg)
+  background: url(elti-meshau-2S2F2exmbhw-unsplash.jpg)
     no-repeat center center/cover;
   position: relative;
   background-attachment: fixed;
@@ -233,7 +233,7 @@
   position: relative;
 }
 .img-about {
-  background: url(/project_portfolio/img.jpeg) no-repeat center center/cover;
+  background: url(img.jpeg) no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,7 +286,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background: url(/project_portfolio/pexels-lorenzo-242236.jpg) no-repeat center
+  background: url(pexels-lorenzo-242236.jpg) no-repeat center
     center/cover;
   position: absolute;
   background-attachment: fixed;
@@ -299,7 +299,7 @@
   display: flex;
 }
 .img-edu {
-  background: url(/project_portfolio/IMG_20210619_171129_082.jpg) no-repeat
+  background: url(IMG_20210619_171129_082.jpg) no-repeat
     center center/cover;
   display: flex;
   justify-content: center;
@@ -357,7 +357,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(/project_portfolio/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg)
+  background: url(jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg)
     no-repeat center center/cover;
   background-attachment: fixed;
   opacity: 1;
@@ -368,7 +368,7 @@
 }
 /* box */
 .box1 {
-  background: url(/project_portfolio/elti-meshau-2S2F2exmbhw-unsplash.jpg)
+  background: url(elti-meshau-2S2F2exmbhw-unsplash.jpg)
     no-repeat center center/cover;
   background-attachment: fixed;
   height: 50vh;
@@ -376,7 +376,7 @@
 }
 /* box 2 */
 .box2 {
-  background: url(/project_portfolio/elti-meshau-2S2F2exmbhw-unsplash.jpg)
+  background: url(elti-meshau-2S2F2exmbhw-unsplash.jpg)
     no-repeat center center/cover;
   background-attachment: fixed;
   height: 50vh;
@@ -431,7 +431,7 @@
   display: flex;
 }
 .img-skills {
-  background: url(/project_portfolio/photoart.collagemaker.picgrid.edit.photoframe_202161721650115.png)
+  background: url(photoart.collagemaker.picgrid.edit.photoframe_202161721650115.png)
     no-repeat center center/cover;
   display: flex;
   justify-content: center;
@@ -453,7 +453,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(/project_portfolio/joshua-fuller-Ff8vULr_R7I-unsplash.jpg)
+  background: url(joshua-fuller-Ff8vULr_R7I-unsplash.jpg)
     no-repeat center center/cover;
   background-color: tomato;
   background-attachment: fixed;
